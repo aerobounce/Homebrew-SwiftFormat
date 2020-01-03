@@ -19,4 +19,4 @@ if [[ $caskVersion != "$latestVersion" ]]; then
 fi
 
 wait
-git add . && git commit -m "auto update" && git push origin
+git add . && git commit -m "auto commit by updater.sh" && git push origin
