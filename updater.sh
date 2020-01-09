@@ -14,8 +14,15 @@ latestVersion=$(
         sed -e 's/    <title>//g' -e 's/<\/title>//g'
 )
 
+sha256=$(
+    curl "https://codeload.github.com/nicklockwood/SwiftFormat/zip/${latestVersion}" |
+        shasum -a 256 |
+        awk '{print $1}'
+)
+
 if [[ $caskVersion != "$latestVersion" ]]; then
     sed -i '' -e "s/^  version.*/  version \"$latestVersion\"/" ./Casks/swiftformat-for-xcode.rb
+    sed -i '' -e "s/^  sha256.*/  sha256 '$sha256'/" ./Casks/swiftformat-for-xcode.rb
 fi
 
 wait
