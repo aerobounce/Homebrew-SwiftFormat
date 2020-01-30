@@ -1,5 +1,5 @@
 # Adopted as an official
-[nicklockwood/SwiftFormat](https://github.com/nicklockwood/SwiftFormat) began providing an official cask based on this tap — you don't have to use this tap no longer.
+[nicklockwood/SwiftFormat](https://github.com/nicklockwood/SwiftFormat) began providing an official cask based on this tap — you don't have to use this tap no longer. No longer maintained.
 
 - **[SwiftFormat#xcode-source-editor-extension](https://github.com/nicklockwood/SwiftFormat#xcode-source-editor-extension)**
 - [SwiftFormat/issues/134](https://github.com/nicklockwood/SwiftFormat/issues/134)
